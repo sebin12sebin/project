@@ -3,7 +3,7 @@ var app = express.Router();
 const nodemailer = require('nodemailer');
 const crypto = require('crypto');
 
-var User = require("../model/userModel");
+var User = require("./userModel");
 
 app.post('/api/register', async (req, res) => {
     try {
